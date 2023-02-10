@@ -1,0 +1,23 @@
+{
+  "name": "automationexercise",
+  "version": "1.0.0",
+  "description": "QA Challenge Linguagem utilizada no projeto: JavaScritp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellingtondeoliveirasantos/automationexercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wellingtondeoliveirasantos/automationexercise/issues"
+  },
+  "homepage": "https://github.com/wellingtondeoliveirasantos/automationexercise#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1"
+  }
+}

@@ -49,11 +49,11 @@ Quero fazer a compra de três produtos
 Para que eu possa estar bem vestida(o) 
 Os seguintes produtos do e-commerce devem ser adicionados ao carrinho de compra com os dados:
 
-|     Produto     |Quantidade    |
+|     Produto    |Quantidade                     |
 |----------------|-------------------------------|-----------------------------|
-|Stylish Dress|3|'
-|Beautiful Peacock Blue Cotton Linen Saree|2           |
-|Men Tshirt          |1|
+|Stylish Dress   |3|'
+|Beautiful Peacock Blue Cotton Linen Saree|2     |
+|Men Tshirt      |1                              |
 
 
 ### Estória newUserRegistrationCase 

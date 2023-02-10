@@ -8,7 +8,7 @@
 3. Escolha uma das opções (_Clone with SSH_ ou _Clone with HTTPS_) e então clique no botão _Copy URL_ 
 ao lado do campo da opção escolhida
 4. No terminal, no diretório onde você armazena seus projetos de software, digite `git clone [URL copiada no passo anteior]` e pressione ENTER
-5. Por fim, acesso o diretório do projeto recém clonado (`cd diretorio/escohido`)
+5. Por fim, acesso o diretório do projeto recém clonado (`cd diretorio/pastadepreferencia`)
 6. Caso tenha o nodeJS em sua maquina realizar os passos mencionados no ITEM ### Modo interativo
 7. Caso não tenha o nodeJS em sua maquina realizar os proximos passos
 
@@ -58,7 +58,7 @@ module.exports = defineConfig({
 ```
 ### Stories
 
-Estória d Usuário buyThreeProductsCase
+Estória buyThreeProductsCase
   Eu como cliente cadastrado no site https://automationexercise.com/
   Quero fazer a compra de três produtos 
   Para que eu possa estar bem vestida(o)
@@ -69,7 +69,7 @@ Estória d Usuário buyThreeProductsCase
      Men Tshirt                                   1 Item
 
 
-Estória de Usuário newUserRegistrationCase
+Estória newUserRegistrationCase
   Eu como novo cliente realido o cadastrado no site https://automationexercise.com/
   Quero fazer a compra de três produtos 
   Para que eu possa estar bem vestida(o)

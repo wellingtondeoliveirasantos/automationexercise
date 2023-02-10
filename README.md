@@ -2,7 +2,7 @@
 ## QA Challenge Linguagem utilizada no projeto: JavaScritp. 
 
 ### Clonando o projeto 
-1. Acesse a URL [https://github.com/wellingtondeoliveirasantos/blogagi] 
+1. Acesse a URL [https://github.com/wellingtondeoliveirasantos/automationexercise] 
 2. Clique no botão 'Code' 
 3.  Escolha uma das opções (_Clone with SSH_ ou _Clone with HTTPS_) e então clique no botão _Copy URL_ ao lado do campo da opção escolhida 
 4. No terminal, no diretório onde você armazena seus projetos de software, digite `git clone [URL copiada no passo anteior]` e pressione ENTER 

@@ -4,7 +4,8 @@
   "description": "QA Challenge Linguagem utilizada no projeto: JavaScritp.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/wellingtondeoliveirasantos/automationexercise#readme",
   "devDependencies": {
-    "cypress": "^12.5.1"
+    "cypress": "^12.5.1",
+    "faker": "^5.5.3",
+    "faker-br": "^0.4.1"
   }
 }

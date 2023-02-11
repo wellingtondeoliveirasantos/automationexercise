@@ -1,5 +1,5 @@
 # AutomationExercise 
-## QA Challenge Linguagem utilizada no projeto: JavaScritp. 
+## QA Challenge Linguagem utilizada no projeto: JavaScript.
 
 ### Pré-requisitos
 É necessário ter Node.js e o npm instalados para executar este projeto.

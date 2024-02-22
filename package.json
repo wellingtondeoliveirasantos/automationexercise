@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/wellingtondeoliveirasantos/automationexercise#readme",
   "devDependencies": {
-    "cypress": "^12.5.1",
+    "cypress": "^13.6.4",
     "faker": "^5.5.3",
     "faker-br": "^0.4.1"
   }

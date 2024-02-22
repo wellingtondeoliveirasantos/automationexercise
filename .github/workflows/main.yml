@@ -3,7 +3,7 @@ name: Cypress Automation Exercise Tests
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   cypress-tests:

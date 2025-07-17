@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "cypress run",
-    "cy:run:lt": "node generate-lambdatest-config.js && npx lambdatest-cypress run --config-file lambdatest-config.json", 
+    "cy:run:lt": "node generate-lambdatest-config.js && npx git+https://github.com/LambdaTest/lambdatest-cypress-cli.git -- --config-file lambdatest-config.json",
     "generate:lt-config": "node generate-lambdatest-config.js",
     "test:lt": "npm run generate:lt-config && lambdatest-cypress run --config-file lambdatest-config.json",
     "cy:open": "cypress open"

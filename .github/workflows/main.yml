@@ -28,4 +28,4 @@ jobs:
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
 
       - name: Run Cypress tests on LambdaTest
-        run: npx lambdatest-cypress run --config-file lambdatest-config.json
+        run: npx git+https://github.com/LambdaTest/lambdatest-cypress-cli.git -- --config-file lambdatest-config.json

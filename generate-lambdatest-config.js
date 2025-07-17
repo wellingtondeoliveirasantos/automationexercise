@@ -1,5 +1,4 @@
 const fs = require('fs');
-require('dotenv').config();
 
 const config = {
   lambdatest_auth: {
@@ -7,7 +6,7 @@ const config = {
     access_key: process.env.LT_ACCESS_KEY
   },
   run_settings: {
-    build_name: "Build Cypress Visual 17Jul",
+    build_name: `GitHub Actions Build - ${new Date().toISOString()}`,
     project_name: "AutomationExercise",
     specs: "cypress/e2e/**/*.cy.js",
     ignore_files: "",
@@ -25,4 +24,4 @@ const config = {
 };
 
 fs.writeFileSync('lambdatest-config.json', JSON.stringify(config, null, 2));
-console.log('Arquivo lambdatest-config.json gerado com sucesso!');
+console.log('LambdaTest config generated');

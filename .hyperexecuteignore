@@ -1,0 +1,10 @@
+node_modules
+node_modules/*
+test.zip
+project.zip
+mochawesome-report/**/*
+cypress/screenshots/**/*
+cypress/videos/**/*
+cypress/results/**/*
+lambdatest-artefacts/**/*
+*.lock

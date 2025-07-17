@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "cypress run",
+    "cy:run:lt": "node generate-lambdatest-config.js && npx lambdatest-cypress run --config-file lambdatest-config.json", 
+    "generate:lt-config": "node generate-lambdatest-config.js",
+    "test:lt": "npm run generate:lt-config && lambdatest-cypress run --config-file lambdatest-config.json",
     "cy:open": "cypress open"
   },
   "repository": {
@@ -20,6 +23,7 @@
   "homepage": "https://github.com/wellingtondeoliveirasantos/automationexercise#readme",
   "devDependencies": {
     "cypress": "^13.6.4",
+    "dotenv": "^17.2.0",
     "faker": "^5.5.3",
     "faker-br": "^0.4.1"
   }

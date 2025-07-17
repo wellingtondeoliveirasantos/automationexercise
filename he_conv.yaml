@@ -1,0 +1,49 @@
+version: "0.1"
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+runson: ${matrix.os}
+cypress: true
+concurrency: 1
+jobLabel:
+  - heJob
+pre:
+  - npm install --legacy-peer-deps
+  - npm install cypress@13.6.4 --legacy-peer-deps
+  - npm install --legacy-peer-deps
+cacheKey: '{{ checksum "package.lock.json" }}'
+cacheDirectories:
+  - node_modules
+  - cypressCache
+env:
+  CYPRESS_CACHE_FOLDER: cypressCache
+  HYPEREXECUTE_CUSTOM_BUILD: Build Cypress Visual 17Jul
+matrix:
+  browser:
+    - Chrome-latest
+  test:
+    - cypress/e2e/buyThreeProductsCase.cy.js
+    - cypress/e2e/newUserRegistrationCase.cy.js
+  os:
+    - mac13
+testSuites:
+  - npx cypress run --browser=$browser --headed --config video=false --spec $test
+cypressOps:
+  DedicatedProxy: false
+  Build: Build Cypress Visual 17Jul
+  BuildTags: []
+  Tags: []
+  Network: true
+  GeoLocation: ""
+  ReporterConfigFile: base_reporter_config.json
+  ProjectAutoCreate: true
+uploadArtefacts: []
+project:
+  name: cypress_project
+  differentialUpload:
+    enabled: true
+    ttlHours: 60
+combineTasksInMatrixMode: true
+runtime:
+  language: node
+  version: 16.18.1

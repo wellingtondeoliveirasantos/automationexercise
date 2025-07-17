@@ -13,8 +13,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
 
-      - name: Run Cypress tests
-        run: npm run cy:run
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate LambdaTest config
+        run: node generate-lambdatest-config.js
+        env:
+          LT_USERNAME: ${{ secrets.LT_USERNAME }}
+          LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+
+      - name: Run Cypress tests on LambdaTest
+        run: npx lambdatest-cypress run --config-file lambdatest-config.json

@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   cypress-tests:
@@ -28,12 +27,9 @@ jobs:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
 
-      - name: Run Cypress tests on LambdaTest
-        run: npx github:LambdaTest/lambdatest-cypress-cli --config-file lambdatest-config.json
+      - name: Show LambdaTest config (mask access_key)
+        run: |
+          cat lambdatest-config.json | sed 's/"access_key": *".*"/"access_key": "***"/g'
 
-      - name: Upload test results
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: mochawesome-report
-          path: cypress/results/mochawesome-report  
+      - name: Run Cypress tests on LambdaTest
+        run: npx git+https://github.com/LambdaTest/lambdatest-cypress-cli.git -- --config-file lambdatest-config.json

@@ -67,7 +67,7 @@ Projeto de automação de testes end-to-end usando **Cypress** para o site [Auto
 3. O workflow do GitHub Actions já está configurado em:
 
 ```
-.github/workflows/cypress.yml
+.github/workflows/main.yml
 ```
 
 A execução será feita automaticamente em cada push na branch `main` ou manualmente via **"Run workflow"**.
@@ -106,5 +106,5 @@ Você pode acompanhar os testes diretamente no [Painel do LambdaTest](https://au
 
 Este projeto foi desenvolvido com 💚 por **Wellington Santos**.
 
-- [LinkedIn](https://www.linkedin.com/in/wellingtondeoliveirasantos/)
+- [LinkedIn](https://www.linkedin.com/in/wellington-staff-qa-expert/)
 - [GitHub](https://github.com/wellingtondeoliveirasantos)

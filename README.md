@@ -1,41 +1,110 @@
-# AutomationExercise 
-## QA Challenge Linguagem utilizada no projeto: JavaScript.
 
-### Pré-requisitos
-É necessário ter Node.js e o npm instalados para executar este projeto.
-Usei as versões v18.14.0 de Node.js e 9.3.1 do npm, respectivamente. Sugiro que você use as mesmas versões LTS ou posteriores.
-(Caso não tenha node instalado segue link [https://nodejs.org/en/download/])
+# 🛒 AutomationExercise - Cypress Automation Project
 
-### Instalação
-Execute npm install (ou npm i para a versão curta) para instalar as dependências de desenvolvimento.
+Projeto de automação de testes end-to-end usando **Cypress** para o site [Automation Exercise](https://automationexercise.com). Desenvolvido como um desafio de QA, com execução local e integração contínua via **GitHub Actions + LambdaTest**.
 
-### Testes
-Execute npm run cy:run para executar o teste no modo headless.
-Ou execute npm run cy:open para abrir o aplicativo Cypress e executar os testes no modo interativo.
+---
 
-## Estórias
-### Estória buyThreeProducts
-Eu como cliente cadastrado no site https://automationexercise.com/ 
-Quero fazer a compra de três produtos 
-Para que eu possa estar bem vestida(o) 
-Os seguintes produtos do e-commerce devem ser adicionados ao carrinho de compra com os dados:
+## 🚀 Tecnologias
 
-|Produto         |Quantidade     |
-|----------------|---------------|
-|Stylish Dress   |3              |
-|Beautiful Peacock Blue Cotton Linen Saree|2|
-|Men Tshirt      |1              |
+- ✅ **JavaScript**
+- ✅ **Cypress 13**
+- ✅ **GitHub Actions**
+- ✅ **LambdaTest** (Execução em nuvem)
 
-### Estória newUserRegistrationCase 
-Eu como novo cliente realizo o cadastrado no site https://automationexercise.com/ 
-Quero fazer a compra de três produtos 
-Para que eu possa estar bem vestida(o) 
-Os seguintes produtos do e-commerce devem ser adicionados ao carrinho de compra com os dados:
+---
 
-|Produto         |Quantidade     |
-|----------------|---------------|
-|Stylish Dress   |3              |
-|Beautiful Peacock Blue Cotton Linen Saree|2|
-|Men Tshirt      |1              |
+## 📦 Pré-requisitos
 
-Este projeto foi criado com 💚 por Wellington Santos.
+- Node.js (v18.14.0 recomendado)
+- npm (v9.3.1 recomendado)
+
+> Caso não tenha instalado, acesse: [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+---
+
+## 🔧 Instalação
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/wellingtondeoliveirasantos/automationexercise.git
+   cd automationexercise
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+---
+
+## 🧪 Executando os testes
+
+### ✅ Localmente
+
+- Headless:
+  ```bash
+  npm run cy:run
+  ```
+
+- Interativo (com interface do Cypress):
+  ```bash
+  npm run cy:open
+  ```
+
+---
+
+## ☁️ Executando no LambdaTest via GitHub Actions
+
+### Configuração
+
+1. Crie duas variáveis secretas no GitHub:
+   - `LT_USERNAME`
+   - `LT_ACCESS_KEY`
+
+2. Assegure-se de que o arquivo `generate-lambdatest-config.js` esteja presente com a lógica de geração do `lambdatest-config.json`.
+
+3. O workflow do GitHub Actions já está configurado em:
+
+```
+.github/workflows/cypress.yml
+```
+
+A execução será feita automaticamente em cada push na branch `main` ou manualmente via **"Run workflow"**.
+
+Você pode acompanhar os testes diretamente no [Painel do LambdaTest](https://automation.lambdatest.com/builds/).
+
+---
+
+## 🧾 Estórias Automatizadas
+
+### 🛍️ buyThreeProducts
+
+**Cenário:** Cliente cadastrado realiza a compra de três produtos.
+
+| Produto | Quantidade |
+|---------|------------|
+| Stylish Dress | 3 |
+| Beautiful Peacock Blue Cotton Linen Saree | 2 |
+| Men Tshirt | 1 |
+
+---
+
+### 🧑‍💻 newUserRegistrationCase
+
+**Cenário:** Novo cliente se cadastra e realiza a compra dos mesmos produtos acima.
+
+| Produto | Quantidade |
+|---------|------------|
+| Stylish Dress | 3 |
+| Beautiful Peacock Blue Cotton Linen Saree | 2 |
+| Men Tshirt | 1 |
+
+---
+
+## 👨‍💻 Autor
+
+Este projeto foi desenvolvido com 💚 por **Wellington Santos**.
+
+- [LinkedIn](https://www.linkedin.com/in/wellingtondeoliveirasantos/)
+- [GitHub](https://github.com/wellingtondeoliveirasantos)
